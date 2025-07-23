@@ -155,19 +155,6 @@ DBS/
 - `GET /api/actuator/health` - Application health
 - `GET /api/actuator/info` - Application info
 
-## 🧪 Testing
-
-### Frontend Testing
-- Manual testing through browser
-- Form validation testing
-- Responsive design testing
-
-### Backend Testing
-```bash
-cd backend
-mvn test
-```
-
 ## 🐳 Docker Deployment
 
 ### Build and Run with Docker
@@ -192,27 +179,6 @@ docker build -t dbs-frontend .
 cd backend
 docker build -t dbs-backend .
 ```
-
-## 🔄 Integration
-
-### Frontend-Backend Integration
-- CORS configured for seamless integration
-- JWT token handling for authentication
-- RESTful API consumption
-- Error handling and user feedback
-
-### API Integration Points
-- Authentication endpoints
-- User profile management
-- Transaction data (planned)
-- Account management (planned)
-
-## 📊 Monitoring & Health
-
-- **Spring Boot Actuator**: Health checks and metrics
-- **H2 Console**: Database monitoring (http://localhost:8080/h2-console)
-- **Application Logs**: Detailed logging for debugging
-
 ## 🚀 Deployment
 
 ### Local Development
@@ -241,30 +207,6 @@ docker build -t dbs-backend .
 - JWT secret and expiration
 - CORS settings for frontend
 
-## 📈 Future Enhancements
-
-### Planned Features
-- [ ] Account balance and transaction APIs
-- [ ] Fund transfer implementation
-- [ ] Real-time notifications
-- [ ] Advanced security features
-- [ ] Database migration to MySQL/PostgreSQL
-- [ ] Unit and integration tests
-- [ ] API documentation with Swagger
-- [ ] Monitoring and logging
-- [ ] Performance optimization
-
-### Microservice Expansion
-- [ ] Account Service
-- [ ] Transaction Service
-- [ ] Notification Service
-- [ ] Payment Gateway Integration
-- [ ] Reporting Service
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
 #### Frontend Issues
 - **Port 3000 in use**: Change port in `frontend/server.js`
 - **API connection errors**: Check backend is running on port 8080
@@ -280,48 +222,6 @@ docker build -t dbs-backend .
 - **Port conflicts**: Change ports in docker-compose.yml
 - **Volume mounting**: Verify file permissions
 
-### Debug Commands
-```bash
-# Check if ports are in use
-lsof -i :3000
-lsof -i :8080
-
 # Check Docker containers
 docker ps
 docker logs <container-name>
-
-# Check application logs
-tail -f backend/logs/application.log
-```
-
-## 📚 Documentation
-
-- **Frontend Documentation**: See `frontend/README.md`
-- **Backend Documentation**: See `backend/README.md`
-- **API Documentation**: Planned with Swagger
-- **Database Schema**: See entity classes in backend
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is for educational purposes and demonstrates a full-stack banking application.
-
-## 🙏 Acknowledgments
-
-- Spring Boot team for the excellent framework
-- Bootstrap team for the responsive UI framework
-- Node.js community for the JavaScript runtime
-- All open-source contributors
-
----
-
-**Status**: ✅ Frontend Complete | 🔄 Backend In Progress | 🎯 Ready for Integration
-
-**Last Updated**: July 2024 
